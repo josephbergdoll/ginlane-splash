@@ -1,0 +1,54 @@
+@import "partials/_reset";
+@import "bourbon";
+@import "neat/neat";
+@import "partials/_variables";
+@import "partials/_base";
+
+header, section, footer {
+  width: 100%;
+  height: auto;
+}
+
+.logo {
+  display: block;
+  width: 8rem;
+  height: 2rem;
+  background: url(../img/glm-logo.svg) no-repeat center center;
+  background-size: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  @include outer-container;
+  width: 90%;
+  padding: 2rem 2rem;
+}
+
+.hero {
+  text-align: center;
+  position:fixed;
+  top: 0;
+  left: 0;
+}
+
+.hero .wrapper h1 {
+  margin-top: 25%;
+}
+
+.main-content {
+    padding-top: 67%;
+}
+
+.about {
+  @include span-columns(6);
+  @include shift(3);
+}
+
+.about p {
+  font-size: 1.65em;
+  color: $gray-type;
+  margin-bottom: 2rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

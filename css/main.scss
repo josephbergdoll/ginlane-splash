@@ -32,7 +32,7 @@ header, section, footer {
 }
 
 .hero .wrapper h1 {
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .pencil-img {
@@ -66,6 +66,15 @@ header, section, footer {
 
 .about p {
   font-size: 1.65em;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+.about {
+  @include span-columns(6);
+  @include shift(3);
 }
 
 }

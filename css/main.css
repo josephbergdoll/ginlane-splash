@@ -175,7 +175,7 @@ header, section, footer {
   left: 0; }
 
 .hero .wrapper h1 {
-  margin-top: 10%; }
+  margin-top: 15%; }
 
 .pencil-img {
   margin-top: 4rem;
@@ -207,3 +207,12 @@ header, section, footer {
 
   .about p {
     font-size: 1.65em; } }
+@media only screen and (min-width: 1200px) {
+  .about {
+    float: left;
+    display: block;
+    margin-right: 3.28774%;
+    width: 48.35613%;
+    margin-left: 25.82194%; }
+    .about:last-child {
+      margin-right: 0; } }

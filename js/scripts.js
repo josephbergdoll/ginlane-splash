@@ -23,3 +23,11 @@ $(document).ready(function(){
 
 
 });
+
+$(window).load(function(){
+
+  $('.headlines').delay(1000).queue(function(){
+    $(this).removeClass('fade-contents');
+  });
+
+});

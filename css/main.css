@@ -207,9 +207,15 @@ header, section, footer {
   vertical-align: middle; }
 
 .headlines {
-  -webkit-transition: 600ms opacity ease-out;
-  -moz-transition: 600ms opacity ease-out;
-  transition: 600ms opacity ease-out; }
+  -webkit-transition: 800ms all ease-out;
+  -moz-transition: 800ms all ease-out;
+  transition: 800ms all ease-out; }
+  .headlines.fade-contents {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px); }
 
 .fade-hero .headlines {
   opacity: 0; }

@@ -56,7 +56,10 @@ header, section, footer {
 }
 
 .headlines {
-  @include transition($long-transition opacity ease-out);
+  @include transition($longest-transition all ease-out);
+  &.fade-contents {
+    @include transform(translateY(-10px));
+  }
 }
 
 .fade-hero {

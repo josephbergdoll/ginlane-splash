@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.js-header').waypoint(function(direction) {
     $(this).toggleClass('drop-shadow', direction === 'down');
   }, {
-    offset: '-100px'
+    offset: '-50px'
   });
 
     $('.main-content').waypoint(function(direction) {

@@ -16,7 +16,7 @@ header, section, footer {
   padding: 1rem;
   background: white;
   z-index: 5;
-  @include transition($long-transition box-shadow ease-out);
+  @include transition($short-transition box-shadow ease-out);
 }
 
 .drop-shadow {
@@ -43,10 +43,16 @@ header, section, footer {
   position:fixed;
   top: 0;
   left: 0;
-  bottom;
+  bottom: 0;
   .wrapper {
+    display: table;
     height: 100%;
   }
+}
+
+.wrapper-content {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .headlines {
@@ -67,10 +73,6 @@ header, section, footer {
   opacity: 0;
 }
 
-.hero .wrapper h1 {
-  margin-top: 20%;
-}
-
 .pencil-img {
   margin-top: 4rem;
   width: 75%;
@@ -88,6 +90,10 @@ header, section, footer {
     }
 }
 
+.about {
+  margin: 0 auto 4rem;
+}
+
 .about p {
   font-size: 1.1em;
   line-height: 1.8;
@@ -98,15 +104,9 @@ header, section, footer {
   }
 }
 
-.contact-links {
-  padding-bottom: 7rem;
-  position:relative;
-    z-index: 4;
-}
-
 .main-content h2 {
-  font-size: 1.1em;
   margin: 0 auto 4rem;
+  font-size: 1.1em;
   text-align: center;
   font-style: italic;
   color: $gray-type;
@@ -119,8 +119,13 @@ header, section, footer {
 
 
 .contact-item {
+  text-align: center;
+  margin-bottom: 2rem;
   a {
     font-size: 1.1em;
+  }
+  &:last-child {
+    margin-bottom: 7rem;
   }
 }
 
@@ -137,8 +142,6 @@ header, section, footer {
 }
 
 .contact-item {
-  text-align: center;
-  margin-bottom: 2rem;
   a {
     font-size: 1.65em;
   }

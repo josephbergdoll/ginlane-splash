@@ -24,7 +24,8 @@ body {
 }
 
 ::selection {
-  color: white;
+  background: $gray-light;
+  color: $gray-type;
 }
 
 ::-moz-selection {

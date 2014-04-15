@@ -71,7 +71,11 @@ em {
 
 a {
   text-decoration: none;
-  color: black;
+  color: $black;
+  @include transition($hover-speed color ease-out);
+  &:hover {
+    color: $gray-light;
+  }
 }
 
 .center {

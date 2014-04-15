@@ -178,7 +178,10 @@ header, section, footer {
   height: 2rem;
   background: url(../img/glm-logo.svg) no-repeat center center;
   background-size: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transition: 800ms all ease-out;
+  -moz-transition: 800ms all ease-out;
+  transition: 800ms all ease-out; }
 
 .wrapper {
   *zoom: 1;

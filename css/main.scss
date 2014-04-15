@@ -30,6 +30,7 @@ header, section, footer {
   background: url(../img/glm-logo.svg) no-repeat center center;
   background-size: 100%;
   margin: 0 auto;
+  @include transition($longest-transition all ease-out);
 }
 
 .wrapper {
